@@ -1,0 +1,13 @@
+flowchart TD
+  %% Fiktives Beispiel · Schritt 4 · heutiger Ablauf
+  subgraph Inhaber
+    A[Kunde: Anfrage per Mail, Telefon oder Messenger] --> B[Inhaber: merkt sich die Anfrage oder notiert sie auf Papier ⚠]
+    B --> C[Inhaber: Aufmaß vor Ort, Notizen auf Papier]
+    C --> D[Inhaber: Angebot abends in Word ⚠]
+    D --> E{Kunde antwortet?}
+    E -- Nein --> F[Kein Nachfassen ⚠]
+  end
+  subgraph Montage
+    E -- Ja --> G[Monteur: bekommt Zettel mit Maßen ⚠]
+    G --> H[Monteur: bestellt Material und montiert]
+  end
